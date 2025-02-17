@@ -1,0 +1,128 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* color: white; */
+    /* padding: 10px 0; */
+}
+header nav{
+    padding: 20px;
+    max-width: 1000px;
+    /* margin: 0 auto; */
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+html body{
+	min-height:100dvh;
+	margin:0;
+	display:flex;
+	flex-direction:column;
+	justify-content: space-between;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+	font-size:75%;
+    width: 100%;
+}
+
+main {
+	flex:1;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main a{
+	color:#069;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+	overflow:auto;
+	margin:20px 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bio {
+	/* min-width:300px; */
+    flex: 1 1 700px;
+    margin-right: 20px;
+}
+
+.bio h1 {
+    /* margin-top: 0; */
+}
+
+.profile-pic {
+	min-width:50px;
+    flex: 0 1 200px;
+}
+
+.profile-pic img {
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.research {
+    display: block;
+	overflow:auto;
+	margin:20px 0;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Publications Page */
+.publications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.publications ul li {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
