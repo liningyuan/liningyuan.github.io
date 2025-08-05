@@ -20,23 +20,59 @@
         <section class="research">
             <h1>Research</h1>
             <p>
-			My research interest is in algorithmic game theory (AGT) and computational economics.
-			
+			I worked on mechanism design for e-commerce platforms and contest design in multi-contest environments. Recently I am working on strategic information manipulation in mechanism design scenarios.
 			</p>
         </section>
         <section class="publications">
             <h1>Publications</h1>
-            <ul>
-                <li>will be added later...</li>
+            <ul id="pub-list">
+                <li>Should be added by JavaScript...</li>
                 <li><a href="https://dblp.org/pid/183/6738-1.html">DBLP</a></li>
-                <!-- Add more publications here -->
             </ul>
         </section>
     </main>
 
     <footer>
-        &copy; 2025 Ningyuan Li. Last updated: 2025/02/17. 
+        &copy; 2025 Ningyuan Li. Last updated: 2025/08/05. 
 		<!-- Thanks to chatGPT for writing this website. -->
     </footer>
+<script type="text/javascript">
+var pubs=[
+{"title":"Beyond Advertising: Mechanism Design for Platform-Wide Marketing Service \"QuanZhanTui\"",
+"authors":"Ningyuan Li, Zhilin Zhang, Tianyan Long, Yuyao Liu, Rongquan Bai, Yurong Chen, Xiaotie Deng, Pengjie Wang, Chuan Yu, Jian Xu, Bo Zheng",
+"comment":"KDD 2025",
+"URL":"https://doi.org/10.1145/3711896.3736853"},
+{"title":"Ad vs Organic: Revisiting Incentive Compatible Mechanism Design in E-commerce Platforms",
+"authors":"Ningyuan Li, Yunxuan Ma, Yang Zhao, Qian Wang, Zhilin Zhang, Chuan Yu, Jian Xu, Bo Zheng, Xiaotie Deng",
+"comment":"WWW 2024",
+"URL":"https://doi.org/10.1145/3589334.3645638"},
+{"title":"Competition among Pairwise Lottery Contests",
+"authors":"Xiaotie Deng, Hangxin Gan, Ningyuan Li, Weian Li, Qi Qi",
+"comment":"AAAI 2024",
+"URL":"https://doi.org/10.1609/aaai.v38i9.28823"},
+{"title":"Learning-Based Ad Auction Design with Externalities: The Framework and A Matching-Based Approach",
+"authors":"Ningyuan Li, Yunxuan Ma, Yang Zhao, Zhijian Duan, Yurong Chen, Zhilin Zhang, Jian Xu, Bo Zheng, Xiaotie Deng",
+"comment":"KDD 2023",
+"URL":"https://doi.org/10.1145/3580305.3599403"},
+{"title":"Equilibrium Analysis of Customer Attraction Games",
+"authors":"Xiaotie Deng, Ningyuan Li, Weian Li, Qi Qi",
+"comment":"WINE 2023",
+"URL":"https://doi.org/10.1007/978-3-031-48974-7_14"},
+{"title":"On the Complexity of Computing Markov Perfect Equilibrium in General-Sum Stochastic Games",
+"authors":" Xiaotie Deng, Ningyuan Li, David Mguni, Jun Wang, Yaodong Yang",
+"comment":"National Science Review, 2023",
+"URL":"https://doi.org/10.1093/nsr/nwac256"},
+{"title":"Competition Among Parallel Contests",
+"authors":"Xiaotie Deng, Ningyuan Li, Weian Li, Qi Qi",
+"comment":"WINE 2022",
+"URL":"https://arxiv.org/abs/2210.06866"},
+];
+let x=document.getElementById("pub-list");
+let s="";
+for(let i in pubs){
+	s+=`<li><a href="${pubs[i].URL}">${pubs[i].title}</a><br>${pubs[i].authors}<br>${pubs[i].comment}<\/li>`;
+}
+x.innerHTML=s;
+</script>
 </body>
 </html>
